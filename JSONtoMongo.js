@@ -31,10 +31,10 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
     var listingObject = new Listing(element);
     listingObject.save(function(err) {
       if (err) throw err;
-      console.log('HOLY SHIT A NEW BUILDING');
+      console.log('Place!');
     });
   });
-  console.log('FUCKING STOP ALREADY');
+  console.log('Done!');
 });
 /*  
   Check to see if it works: Once you've written + run the script, check out your MongoLab database to ensure that 
